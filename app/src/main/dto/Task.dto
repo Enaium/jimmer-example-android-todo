@@ -1,0 +1,22 @@
+export cn.enaium.todo.model.entity.Task
+    -> package cn.enaium.todo.model.entity.dto
+
+input TaskInput {
+    id
+    content
+    category {
+        id
+    }
+    completed
+    important
+}
+
+TaskView {
+    id
+    content
+    category {
+        id
+    }
+    completed
+    important
+}

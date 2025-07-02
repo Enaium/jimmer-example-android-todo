@@ -1,0 +1,7 @@
+export cn.enaium.todo.model.entity.Account
+    -> package cn.enaium.todo.model.entity.dto
+
+input AccountInput {
+    username
+    password
+}

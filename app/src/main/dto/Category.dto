@@ -1,0 +1,12 @@
+export cn.enaium.todo.model.entity.Category
+    -> package cn.enaium.todo.model.entity.dto
+
+input CategoryInput {
+    id
+    name
+}
+
+CategoryView {
+    id
+    name
+}
