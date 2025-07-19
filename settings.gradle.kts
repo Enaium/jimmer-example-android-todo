@@ -27,7 +27,7 @@ plugins {
 }
 
 jimmer {
-    version = "0.9.97"
+    version = "0.9.100"
 }
 
 include(":app")
