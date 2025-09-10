@@ -27,6 +27,7 @@ import java.security.MessageDigest
 /**
  * @author Enaium
  */
+@OptIn(ExperimentalStdlibApi::class)
 fun String.md5(): String {
     val salt = "I don't wanna be a dead man walking."
     return MessageDigest.getInstance("MD5")

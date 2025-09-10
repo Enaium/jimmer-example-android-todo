@@ -23,11 +23,11 @@ dependencyResolutionManagement {
 rootProject.name = "ToDo"
 
 plugins {
-    id("cn.enaium.jimmer.gradle.setting") version "0.0.31"
+    id("cn.enaium.jimmer.gradle.setting") version "0.0.33"
 }
 
 jimmer {
-    version = "0.9.100"
+    version = "0.9.107"
 }
 
 include(":app")
