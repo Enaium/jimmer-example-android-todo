@@ -1,5 +1,6 @@
 pluginManagement {
     repositories {
+        mavenLocal()
         google {
             content {
                 includeGroupByRegex("com\\.android.*")
@@ -9,12 +10,12 @@ pluginManagement {
         }
         mavenCentral()
         gradlePluginPortal()
+        mavenLocal()
     }
 }
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
-        mavenLocal()
         google()
         mavenCentral()
     }
@@ -23,11 +24,11 @@ dependencyResolutionManagement {
 rootProject.name = "ToDo"
 
 plugins {
-    id("cn.enaium.jimmer.gradle.setting") version "0.0.33"
+    id("cn.enaium.jimmer.gradle.setting") version "0.0.34"
 }
 
 jimmer {
-    version = "0.9.107"
+    version = "0.10.6"
 }
 
 include(":app")

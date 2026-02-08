@@ -1,8 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
-    alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
-    alias(jimmers.plugins.ksp) version "${libs.versions.kotlin.get()}+"
+    alias(jimmers.plugins.ksp) version libs.versions.ksp.get()
     alias(jimmers.plugins.jimmer)
 }
 
@@ -41,8 +40,8 @@ android {
 dependencies {
     patch(jimmers.sqlKotlin)
     patchKsp(jimmers.ksp)
-    ksp(files(configurations.patchKsp.get()))
     implementation(libs.sqlite)
+    implementation(libs.jackson)
 
     implementation(libs.androidx.navigation.compose)
     implementation(libs.androidx.datastore)
